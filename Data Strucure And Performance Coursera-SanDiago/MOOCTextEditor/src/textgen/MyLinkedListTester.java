@@ -5,7 +5,7 @@ package textgen;
 
 import static org.junit.Assert.*;
 
-import java.util.LinkedList;
+//import java.util.LinkedList;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,6 +17,7 @@ import org.junit.Test;
 public class MyLinkedListTester {
 
 	private static final int LONG_LIST_LENGTH =10; 
+
 
 	MyLinkedList<String> shortList;
 	MyLinkedList<Integer> emptyList;
@@ -59,7 +60,7 @@ public class MyLinkedListTester {
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e) {
-			
+		System.out.println("IndexOutOfBoundsException " + e);
 		}
 		
 		// test short list, first contents, then out of bounds

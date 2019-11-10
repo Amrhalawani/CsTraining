@@ -17,22 +17,23 @@ public class DocumentBenchmarking {
 
 	    // Run each test more than once to get bigger numbers and less noise.
 	    // You can try playing around with this number.
-	    int trials = 100;
+	    int trials = 1;
 
 	    // The text to test on
+            // btw data/warAndPeace.txt around 500k words
 	    String textfile = "data/warAndPeace.txt";
 		
 	    // The amount of characters to increment each step
 	    // You can play around with this
-		int increment = 20000;
+		int increment = 50000;
 
 		// The number of steps to run.  
 		// You can play around with this.
-		int numSteps = 20;
+		int numSteps = 200;
 		
 		// THe number of characters to start with. 
 		// You can play around with this.
-		int start = 50000;
+		int start = 20000;
 		
 		// TODO: Fill in the rest of this method so that it runs two loops
 		// and prints out timing results as described in the assignment 
@@ -43,6 +44,31 @@ public class DocumentBenchmarking {
 			// numToCheck holds the number of characters that you should read from the 
 			// file to create both a BasicDocument and an EfficientDocument.  
 			
+                    System.out.print(numToCheck + "\t");
+                    
+                    String str = getStringFromFile(textfile,numToCheck);
+                    
+                    //BasicDocument
+                    for(int i =0;i<trials;i++){
+                         Long startTimer1 = System.nanoTime();
+                    BasicDocument basic = new BasicDocument(str);
+                    basic.getFleschScore();
+                    Long endTimer1 = System.nanoTime();
+                    
+                      System.out.print( getEstTime(startTimer1,endTimer1) + "\t");
+                    
+                    //EfficientDocument
+                    
+                    Long startTimer2 = System.nanoTime() ;
+                    EfficientDocument eff = new EfficientDocument(str);
+                    eff.getFleschScore();
+                    Long endTimer2 = System.nanoTime() ;
+                    System.out.print( getEstTime(startTimer2,endTimer2) + "\n");
+                    }
+                   
+                    
+         
+                    
 			/* Each time through this loop you should:
 			 * 1. Print out numToCheck followed by a tab (\t) (NOT a newline)
 			 * 2. Read numToCheck characters from the file into a String
@@ -62,6 +88,11 @@ public class DocumentBenchmarking {
 		}
 	
 	}
+        
+      private static double getEstTime(Long startTimer, Long endTimer) {
+      return (endTimer - startTimer)/1000000000.0;
+    }
+	
 	
 	/** Get a specified number of characters from a text file
 	 * 
@@ -96,5 +127,6 @@ public class DocumentBenchmarking {
 		
 		return s.toString();
 	}
-	
+
+   
 }

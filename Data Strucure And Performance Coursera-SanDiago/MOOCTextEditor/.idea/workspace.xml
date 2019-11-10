@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d6ab097-4bbf-4b83-a436-dd68be158580" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/MOOCTextEditor.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/MOOCTextEditor.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MOOCTextEditor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_automatic_build" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/.netbeans_update_resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/AutoSpellingTextArea$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/AutoSpellingTextArea$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/AutoSpellingTextArea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/EditDistanceDialogController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/EditDistanceDialogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/LaunchClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/LoadFileDialogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/MainApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/MarkovController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/TextProController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/TextProController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/EditDistanceLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/LoadFileLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/MarkovLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/MarkovOptionsLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/RootLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/application/view/TextAppLayout.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/BasicDocument.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/BasicDocumentGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/Document.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/DocumentBenchmarking.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/EfficientDocument.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/document/EfficientDocumentGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/AutoComplete.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/AutoCompleteDictionaryTrie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/AutoCompleteDictionaryTrieTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/Dictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryBST.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryBSTTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryBenchmarking.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryHashSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryLL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryLLTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/DictionaryLoader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/NearbyWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/NearbyWordsGraderOne.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/NearbyWordsGraderTwo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/SpellingSuggest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/TrieGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/TrieNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/WPTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/WPTree.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/WPTreeGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/WPTreeNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/spelling/WordPath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/LLNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/ListNode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MarkovTextGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MarkovTextGeneratorGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MarkovTextGeneratorLoL.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MarkovTextGeneratorLoL.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MyLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MyLinkedListGrader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/textgen/MyLinkedListTester.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grader_output/module1.part1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grader_output/module1.part2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/genfiles.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/LaunchClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/LaunchClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/document/DocumentBenchmarking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/document/DocumentBenchmarking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textgen/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textgen/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textgen/MyLinkedListTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/textgen/MyLinkedListTester.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1TLMH6Z3rtZy3mYCGEsepkAtGK6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/junit-4.13-rc-1.jar!/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.test">
+    <configuration name="MOOCTextEditor [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MyLinkedListTester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MOOCTextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="textgen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="textgen" />
+      <option name="MAIN_CLASS_NAME" value="textgen.MyLinkedListTester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyLinkedListTester.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MOOCTextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="textgen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="textgen" />
+      <option name="MAIN_CLASS_NAME" value="textgen.MyLinkedListTester" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MOOCTextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="textgen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="textgen" />
+      <option name="MAIN_CLASS_NAME" value="textgen.test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.asd" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="MOOCTextEditor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="textgen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="textgen" />
+      <option name="MAIN_CLASS_NAME" value="textgen.test" />
+      <option name="METHOD_NAME" value="asd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.test.asd" />
+      <item itemvalue="JUnit.MyLinkedListTester" />
+      <item itemvalue="JUnit.MyLinkedListTester.testGet" />
+      <item itemvalue="JUnit.test" />
+      <item itemvalue="Gradle.MOOCTextEditor [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test" />
+        <item itemvalue="Gradle.MOOCTextEditor [dependencies]" />
+        <item itemvalue="JUnit.MyLinkedListTester" />
+        <item itemvalue="JUnit.MyLinkedListTester.testGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d6ab097-4bbf-4b83-a436-dd68be158580" name="Default Changelist" comment="" />
+      <created>1573234831101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573234831101</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/textgen/MyLinkedList.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/textgen/MyLinkedListTester.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/textgen/MyLinkedListTester.java</url>
+          <line>18</line>
+          <properties field="LONG_LIST_LENGTH" class="textgen.MyLinkedListTester" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

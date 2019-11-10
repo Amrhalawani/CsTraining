@@ -1,6 +1,7 @@
 package textgen;
 
 import java.util.AbstractList;
+import java.util.LinkedList;
 
 
 /** A class that implements a doubly linked list
@@ -16,43 +17,83 @@ public class MyLinkedList<E> extends AbstractList<E> {
 
 	/** Create a new empty LinkedList */
 	public MyLinkedList() {
-		// TODO: Implement this method
+
+        size = 0;
+        head = new LLNode<>(null); //sentinel node {dummy node}
+        tail = new LLNode<>(null); //sentinel node
+        head.next = tail;
+        tail.prev = head;
 	}
 
 	/**
 	 * Appends an element to the end of the list
 	 * @param element The element to add
+     * @return 
 	 */
+        @Override
 	public boolean add(E element ) 
 	{
-		// TODO: Implement this method
+           if(element!=null){
+              LLNode<E> newNode= new LLNode<>(element);
+                newNode.prev = tail.prev;
+                tail.prev.next = newNode;
+                tail.prev = newNode;
+                newNode.next = tail;
+                size++;  
+           return true;
+           }  
 		return false;
 	}
 
 	/** Get the element at position index 
 	 * @throws IndexOutOfBoundsException if the index is out of bounds. */
-	public E get(int index) 
-	{
-		// TODO: Implement this method.
-		return null;
+        @Override
+	public E get(int index) {
+                if( size > 0 && index >=0 && index <= size-1){
+                   LLNode<E> res = head;
+                for (int i = 0; i <= index; i++) {
+                res = res.next;
+                }
+                return res.data; 
+                }else{
+                throw new IndexOutOfBoundsException();
+                }
 	}
 
 	/**
 	 * Add an element to the list at the specified index
-	 * @param The index where the element should be added
+	 * @param index where the element should be added
 	 * @param element The element to add
 	 */
+        @Override
 	public void add(int index, E element ) 
 	{
-		// TODO: Implement this method
+		 if( size > 0 && index >=0 && index <= size-1){
+           LLNode<E> res = head;  
+            for (int i = 0; i <= index; i++) {
+              res = res.next;
+            }
+            
+            LLNode<E> newNode= new LLNode<>(element);
+                newNode.prev = res.prev;
+                res.prev.next = newNode;
+                res.prev = newNode;
+                newNode.next = res;
+                size++;  
+                 }
+                
+             else
+             {
+                  throw new IndexOutOfBoundsException();   
+             }
 	}
 
 
 	/** Return the size of the list */
+        @Override
 	public int size() 
 	{
-		// TODO: Implement this method
-		return -1;
+		return size;
 	}
 
 	/** Remove a node at the specified index and return its data element.
@@ -61,10 +102,24 @@ public class MyLinkedList<E> extends AbstractList<E> {
 	 * @throws IndexOutOfBoundsException If index is outside the bounds of the list
 	 * 
 	 */
+        @Override
 	public E remove(int index) 
 	{
-		// TODO: Implement this method
-		return null;
+             if( size > 0 && index >=0 && index <= size-1){
+           LLNode<E> res = head;
+           
+            for (int i = 0; i <= index; i++) {
+              res = res.next;
+            }
+            res.prev.next =res.next;
+            res.next.prev =res.prev;
+            size--;
+		return res.data;}
+             else
+             {
+                  throw new IndexOutOfBoundsException();
+                 
+             }
 	}
 
 	/**
@@ -74,10 +129,21 @@ public class MyLinkedList<E> extends AbstractList<E> {
 	 * @return The element that was replaced
 	 * @throws IndexOutOfBoundsException if the index is out of bounds.
 	 */
+        @Override
 	public E set(int index, E element) 
 	{
-		// TODO: Implement this method
-		return null;
+             if( size > 0 && index >=0 && index <= size-1){
+           LLNode<E> res = head;  
+            for (int i = 0; i <= index; i++) {
+              res = res.next;
+            }
+            E replacedElement = res.data;
+         res.data = element;
+		return replacedElement;}
+             else
+             {
+                  throw new IndexOutOfBoundsException();   
+             }
 	}   
 }
 
