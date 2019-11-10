@@ -6,8 +6,6 @@
 import textgen.*;
 import static org.junit.Assert.*;
 
-//import java.util.LinkedList;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,11 +18,11 @@ public class MyLinkedListTester {
 	private static final int LONG_LIST_LENGTH =10; 
 
 
-	MyLinkedList<String> shortList;
-	MyLinkedList<Integer> emptyList;
-	MyLinkedList<Integer> longerList;
-	MyLinkedList<Integer> list1;
-        MyLinkedList<Integer> testMyLinkedList;
+	public MyLinkedList<String> shortList;
+	public MyLinkedList<Integer> emptyList;
+	public MyLinkedList<Integer> longerList;
+	public MyLinkedList<Integer> list1;
+        public MyLinkedList<Integer> testMyLinkedList;
         
 	
 	/**
@@ -71,7 +69,7 @@ public class MyLinkedListTester {
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e) {
-		System.out.println("IndexOutOfBoundsException " + e);
+	
 		}
 		
 		// test short list, first contents, then out of bounds
@@ -126,7 +124,10 @@ public class MyLinkedListTester {
 		assertEquals("Remove: check element 0 is correct ", (Integer)21, list1.get(0));
 		assertEquals("Remove: check size is correct ", 2, list1.size());
 		
-		// TODO: Add more tests here
+		list1.add(0, 10);
+		list1.remove(0);
+		list1.add(0, 1);
+                assertEquals("check ", (Integer)1, list1.get(0));
 	}
 	
 	/** Test adding an element into the end of the list, specifically
@@ -141,27 +142,15 @@ public class MyLinkedListTester {
                
             
             try {
-			testMyLinkedList.get(8);
-			fail("Check out of bounds");
+			testMyLinkedList.add(null);
+			fail("Check null");
 		}
-		catch (IndexOutOfBoundsException e) {
+		catch (NullPointerException e) {
 		
 		}
             
-                try {
-			testMyLinkedList.get(-1);
-			fail("Check out of bounds");
-		}
-		catch (IndexOutOfBoundsException e) {
-		
-		}
-                try {
-			testMyLinkedList.get(9);
-			fail("Check out of bounds");
-		}
-		catch (IndexOutOfBoundsException e) {
-		
-		}
+               
+      
 		
 	}
 
@@ -189,20 +178,23 @@ public class MyLinkedListTester {
                  assertEquals("Check prev", (Integer)8   ,   testMyLinkedList.get(3));
                  assertEquals("Check the new element", (Integer)100 , testMyLinkedList.get(4));
                  assertEquals("Check next", (Integer)10  ,  testMyLinkedList.get(5));
+                 
+                
                 try {
-			testMyLinkedList.get(-1);
+			testMyLinkedList.add(-1,-1);
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e) {
 		
 		}
-                try {
-			testMyLinkedList.get(9);
+                 try {
+			testMyLinkedList.add(20,1);
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e) {
 		
 		}
+           
 		
 	}
 	
@@ -232,8 +224,11 @@ public class MyLinkedListTester {
 		
 		}
 	}
+
+
+//todo Check that you can't set an element at too high of an index. 
+//Test #5: Lower bounds on remove...FAILED. Ensure that you can't remove an element at too low of an index. 
+//Test #6: Upper bounds on remove...FAILED. Ensure that you can't remove an element at too high of an index. 
 	
-	
-	// TODO: Optionally add more test methods.
-	
+
 }

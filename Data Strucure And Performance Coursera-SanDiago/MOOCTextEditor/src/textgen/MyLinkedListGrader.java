@@ -97,6 +97,7 @@ public class MyLinkedListGrader {
                 feedback += "** Tests 11-20: Testing method bounds...";
                 
                 out.println(feedback + "Tests complete. Check that everything is as expected.");
+                System.out.println(feedback + "Tests complete. Check that everything is as expected.");
                 out.close();
 		
 	}

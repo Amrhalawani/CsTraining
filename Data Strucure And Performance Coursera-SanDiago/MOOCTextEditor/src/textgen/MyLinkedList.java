@@ -1,7 +1,6 @@
 package textgen;
 
 import java.util.AbstractList;
-import java.util.LinkedList;
 
 
 /** A class that implements a doubly linked list
@@ -41,8 +40,9 @@ public class MyLinkedList<E> extends AbstractList<E> {
                 newNode.next = tail;
                 size++;  
            return true;
-           }  
-		return false;
+           }  else {
+           throw new NullPointerException("Invalid element input ");
+           }
 	}
 
 	/** Get the element at position index 
@@ -68,7 +68,15 @@ public class MyLinkedList<E> extends AbstractList<E> {
         @Override
 	public void add(int index, E element ) 
 	{
-		 if( size > 0 && index >=0 && index <= size-1){
+            if (element == null) {
+			throw new NullPointerException("Invalid element input = null");
+		}
+            
+		if ((index < 0 || index > size - 1) && (index != 0 || size != 0)) {
+			throw new IndexOutOfBoundsException("Invalid index input!!");
+		}
+                
+          
            LLNode<E> res = head;  
             for (int i = 0; i <= index; i++) {
               res = res.next;
@@ -82,11 +90,7 @@ public class MyLinkedList<E> extends AbstractList<E> {
                 size++;  
                  }
                 
-             else
-             {
-                  throw new IndexOutOfBoundsException();   
-             }
-	}
+        
 
 
 	/** Return the size of the list */
@@ -131,7 +135,12 @@ public class MyLinkedList<E> extends AbstractList<E> {
 	 */
         @Override
 	public E set(int index, E element) 
+               
 	{
+            if (element == null) {
+			throw new NullPointerException("Invalid element input = null");
+		}
+            
              if( size > 0 && index >=0 && index <= size-1){
            LLNode<E> res = head;  
             for (int i = 0; i <= index; i++) {
