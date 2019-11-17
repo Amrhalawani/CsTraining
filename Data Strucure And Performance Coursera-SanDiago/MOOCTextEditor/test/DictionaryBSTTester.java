@@ -1,7 +1,7 @@
 /**
  * 
  */
-package spelling;
+
 
 import static org.junit.Assert.*;
 
@@ -9,18 +9,20 @@ import java.util.LinkedList;
 
 import org.junit.Before;
 import org.junit.Test;
+import spelling.DictionaryBST;
+import spelling.DictionaryLoader;
 
 /**
  * @author UC San Diego MOOC team
  *
  */
-public class DictionaryLLTester {
+public class DictionaryBSTTester {
 
 	private String dictFile = "data/words.small.txt"; 
 
-	DictionaryLL emptyDict; 
-	DictionaryLL smallDict;
-	DictionaryLL largeDict;
+	DictionaryBST emptyDict; 
+	DictionaryBST smallDict;
+	DictionaryBST largeDict;
 	
 	/**
 	 * @throws java.lang.Exception
@@ -28,9 +30,9 @@ public class DictionaryLLTester {
 	@Before
 	public void setUp() throws Exception 
 	{
-		emptyDict = new DictionaryLL();
-		smallDict = new DictionaryLL();
-		largeDict = new DictionaryLL();
+		emptyDict = new DictionaryBST();
+		smallDict = new DictionaryBST();
+		largeDict = new DictionaryBST();
 
 		smallDict.addWord("Hello");
 		smallDict.addWord("HElLo");
@@ -123,5 +125,7 @@ public class DictionaryLLTester {
 		
 		
 	}	
+	
+	
 	
 }

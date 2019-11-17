@@ -64,6 +64,8 @@ public class DictionaryGrader {
         feedback += "Tests complete. Make sure everything looks right.";
 
         out.println(feedback);
+        System.out.println(feedback);
+        
         out.close();
     }
 }
